@@ -1,0 +1,164 @@
+/*contact us*/
+.contact {
+  font-family: "Roboto Slab", serif;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  flex-direction: column;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.7) 75%,
+      #000000 100%
+    ),
+    url(img/painting3.JPG);
+  background-size: cover;
+}
+
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 800;
+  text-shadow: black 0.2em 0.2em 0.2em;
+  color: var(--white);
+}
+.contact .content p {
+  font-weight: 300;
+  font-size: 24px;
+  text-shadow: black 0.2em 0.2em 0.2em;
+  color: var(--white);
+}
+.contact_us {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact_us .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+  padding: 45px 20px;
+}
+
+.contact_us .contactInfo .box {
+  position: relative;
+  padding: 20px 40px;
+  display: flex;
+}
+
+.contact_us .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.contact_us .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 24px;
+  flex-direction: column;
+  font-weight: 300;
+  color: var(--white);
+  text-shadow: black 0.2em 0.2em 0.2em;
+}
+
+.contact_us .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: var(--white);
+}
+
+/* form */
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background-color: var(--white);
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.contactForm .inputbox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputbox input,
+.contactForm .inputbox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  border-radius: 4px;
+}
+
+input.valid.success-alert,
+textarea.valid.success-alert {
+  border: 2px solid #2ecc71;
+  color: green;
+}
+label.error {
+  color: red;
+  font-size: 1rem;
+  display: block;
+  margin-top: 5px;
+}
+label.error.fail-alert,
+#status .error {
+  border-color: #e74c3c;
+  line-height: 1;
+  padding: 2px 0 6px 6px;
+  background: #ffe6eb;
+}
+.contactForm .inputbox input[type="submit"] {
+  width: 100px;
+  background: var(--black);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+  .contact_us {
+    flex-direction: column;
+  }
+  .contact_us .contactInfo {
+    margin-bottom: 40px;
+  }
+  .contact_us .contactInfo,
+  .contactForm {
+    width: 100%;
+  }
+  .contact_us .contactInfo .box {
+    padding-left: 0px;
+  }
+  .contact_us .contactInfo .box .text {
+    font-size: 1rem;
+  }
+}

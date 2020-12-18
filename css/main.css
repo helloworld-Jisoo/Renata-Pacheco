@@ -1,0 +1,142 @@
+a {
+  font-size: var(--icon_size);
+  text-decoration: none;
+  color: var(--white);
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .logo img {
+  width: 150px;
+  height: 100px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: var(--white);
+}
+
+.navbar .menu {
+  display: flex;
+  list-style: none;
+}
+.navbar .menu li {
+  padding: 8px 12px;
+  font-size: var(--icon_size);
+}
+
+.navbar .toggle_btn {
+  display: none;
+  position: absolute;
+  right: 35px;
+  top: 30px;
+  font-size: var(--icon_size);
+  color: var(--white);
+}
+@media screen and (max-width: 991px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar .menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar .menu li:hover {
+    color: white;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+  .menu.active {
+    display: flex;
+  }
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.7) 75%,
+      #000000 100%
+    ),
+    url(img/painting1.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.main h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.main h2,
+.main a {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+.main .btn {
+  color: var(--white);
+  border: none;
+}
+.main a {
+  padding: 10px;
+}
+.btn:hover {
+  color: white;
+  text-decoration: none;
+}
+.footer {
+  background-color: black;
+  color: var(--white);
+  font-size: 0.5rem;
+}
+@media (min-width: 768px) {
+  .main h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (min-width: 991px) {
+  .main {
+    height: 100vh;
+    padding: 0;
+  }
+  .main h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .main h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+  .footer {
+    font-size: 1rem;
+  }
+  .main a,
+  .footer a {
+    padding: 20px;
+  }
+}

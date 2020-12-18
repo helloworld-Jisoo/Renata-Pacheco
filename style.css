@@ -1,0 +1,21 @@
+@import "css(bootstrap)/bootstrap.css";
+@import "css/main.css";
+@import "css/contact.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Sacramento&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+:root {
+  --black: rgba(0, 0, 0, 0.7);
+  --white: rgba(255, 255, 255, 0.719);
+  --icon_size: 20px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
